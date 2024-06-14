@@ -16,24 +16,10 @@ services:
         generateValue: true
       - key: DB_CLIENT
         value: postgres
-      - key: DB_DATABASE
+      - key: DB_CONNECTION_STRING
         fromDatabase:
           name: ab-directus-db
-          property: database
-      - key: DB_HOST
-        fromDatabase:
-          name: ab-directus-db
-          property: host
-      - key: DB_PORT
-        value: 5432
-      - key: DB_USER
-        fromDatabase:
-          name: ab-directus-db
-          property: user
-      - key: DB_PASSWORD
-        fromDatabase:
-          name: ab-directus-db
-          property: password
+          property: connectionString
 
 databases:
   - name: ab-directus-db
