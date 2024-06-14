@@ -7,7 +7,7 @@ services:
     region: frankfurt
     runtime: image
     image:
-      url: docker.io/directus/directus:latest
+      url: docker.io/directus/directus:10
     envVars:
       - key: ADMIN_EMAIL
         sync: false
@@ -16,7 +16,7 @@ services:
       - key: SECRET
         generateValue: true
       - key: DB_CLIENT
-        value: postgres
+        value: pg
       - key: DB_CONNECTION_STRING
         fromDatabase:
           name: ab-directus-db
