@@ -1,11 +1,4 @@
-# Render Blueprint - Self-Hosted Directus
-#
-# Add the following Environment Variables via
-# the Render Dashboard / Admin UI.
-# - ADMIN_EMAIL
-# - ADMIN_PASSWORD
-# - SECRET
-
+---
 services:
   - type: web
     name: ab-directus-server
@@ -16,11 +9,11 @@ services:
       url: docker.io/directus/directus:latest
     envVars:
       - key: ADMIN_EMAIL
-        value: admin@example.com
+        sync: false
       - key: ADMIN_PASSWORD
-        value: adminPassword
+        sync: false
       - key: SECRET
-        value: secretValue
+        generateValue: true
       - key: DB_CLIENT
         value: postgres
       - key: DB_DATABASE
