@@ -1,9 +1,11 @@
+---
+
 services:
   - type: web
     name: ab-directus-server
     plan: starter
     region: frankfurt
-    runtime: docker
+    runtime: image
     image:
       url: docker.io/directus/directus:latest
     envVars:
@@ -19,6 +21,7 @@ services:
         fromDatabase:
           name: ab-directus-db
           property: connectionString
+
 databases:
   - name: ab-directus-db
     plan: starter
