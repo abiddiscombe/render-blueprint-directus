@@ -1,4 +1,3 @@
----
 services:
   - type: web
     name: ab-directus-server
@@ -26,4 +25,3 @@ databases:
     plan: starter
     region: frankfurt
     ipAllowList: [] # No public access
-    databaseName: directus
