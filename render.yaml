@@ -25,9 +25,7 @@ services:
           name: ab-directus-db
           property: host
       - key: DB_PORT
-        fromDatabase:
-          name: ab-directus-db
-          property: port
+        value: 5432
       - key: DB_USER
         fromDatabase:
           name: ab-directus-db
