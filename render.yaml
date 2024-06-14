@@ -19,7 +19,7 @@ services:
       - key: DB_DATABASE
         fromDatabase:
           name: ab-directus-db
-          property: databaseName
+          property: database
       - key: DB_HOST
         fromDatabase:
           name: ab-directus-db
