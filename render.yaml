@@ -19,7 +19,6 @@ services:
         fromDatabase:
           name: ab-directus-db
           property: connectionString
-
 databases:
   - name: ab-directus-db
     plan: starter
