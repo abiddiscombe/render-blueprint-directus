@@ -1,6 +1,6 @@
 # Render Blueprint - Directus
 
-An example [Render Blueprint](https://docs.render.com/infrastructure-as-code) (Render's IaC Product) for configuring and deploying a [Directus](https://directus.io/) instance, backed by [PostgreSQL](https://www.postgresql.org/). Feel free to repurpose this template for your own use: copy the `render.yaml` file into a new **private** repository and apply any customisations such as modifying the resource's `region` and `name` values.
+An example [Render Blueprint](https://docs.render.com/infrastructure-as-code) (Render's IaC Product) for configuring and deploying a [Directus](https://directus.io/) instance, backed by [PostgreSQL](https://www.postgresql.org/). Feel to use this template for your own projects; make sure to apply any customisations you require such as modifying a resource's `region` and `name` values.
 
 ## Resources
 
