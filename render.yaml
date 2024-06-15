@@ -18,7 +18,7 @@ services:
         value: pg
       - key: DB_CONNECTION_STRING
         fromDatabase:
-          name: ab-directus-db
+          name: directus-db
           property: connectionString
 databases:
   - name: directus-db
