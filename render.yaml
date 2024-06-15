@@ -1,8 +1,7 @@
 ---
-
 services:
   - type: web
-    name: ab-directus-server
+    name: directus-server
     plan: starter
     region: frankfurt
     runtime: image
@@ -21,9 +20,8 @@ services:
         fromDatabase:
           name: ab-directus-db
           property: connectionString
-
 databases:
-  - name: ab-directus-db
+  - name: directus-db
     plan: starter
     region: frankfurt
-    ipAllowList: [] # No public access
+    ipAllowList: []
